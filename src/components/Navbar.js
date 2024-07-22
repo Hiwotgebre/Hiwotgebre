@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
 
 const Navbar = () => {
     return (
@@ -14,6 +15,7 @@ const Navbar = () => {
                 <li>
                     <Link to="/favorites">Favorites</Link>
                 </li>
+                <SearchBar />
             </ul>
             <button class="navbar-toggle">
         <span class="icon-bar"></span>

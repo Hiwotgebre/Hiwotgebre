@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import DetailedView from './components/Detailedview';
 import Navbar from './components/Navbar';
 import RecipeCard from './components/RecipeCard';
 import RecipesList from './components/RecipesList';

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import RecipeCard from '../components/RecipeCard';  
+import RecipeCard from '../components/RecipeCard'; 
+import { useFavorites } from '../context/FavoritesContext' 
 
 const Favorites = () => {
     const [favorites, setFavorites] = useState([]);

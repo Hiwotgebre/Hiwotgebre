@@ -65,3 +65,58 @@
     grid-gap: 20px;
     padding: 20px;
 }
+
+
+/*  Navbar overall styling */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #FFD700;
+}
+
+/*  Mobile menu button styling */
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+}

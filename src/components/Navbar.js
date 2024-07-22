@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="navbar-brand">Recipe App</div>
+            <ul class="navbar-links"> 
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -14,6 +15,11 @@ const Navbar = () => {
                     <Link to="/favorites">Favorites</Link>
                 </li>
             </ul>
+            <button class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span the class="icon-bar"></span>
+    </button>
         </nav>
     );
 };

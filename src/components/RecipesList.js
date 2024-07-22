@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchAllRecipes } from '../api/recipesApi';
-import RecipeCard from '../components/RecipeCard';
+import RecipeCard from './RecipeCard';
 
 const RecipesList = () => {
     const [recipes, setRecipes] = useState([]);

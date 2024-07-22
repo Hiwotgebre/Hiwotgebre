@@ -22,6 +22,16 @@ export const fetchAllRecipes = async () => {
     }
 };
 
+// Function to fetch all instructions
+export const fetchAllInstructions = async () => {
+    try {
+        const response = await apiClient.get('/instructions');
+        return response.data.instructions; // Make sure to adapt this depending on the API response structure
+    } catch (error) {
+        throw error;
+    }
+};
+
 // Function to fetch a single recipe by ID
 export const fetchRecipeById = async (id) => {
     try {

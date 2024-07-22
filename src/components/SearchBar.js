@@ -5,20 +5,21 @@ import React, { useState } from 'react';
 const SearchBar = ({ onSearch }) => {
     const [input, setInput] = useState('');
 
-    const handleSearch = () => {
-        onSearch(input);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        onSearch(input);  // Propagate the search term up to a parent component or service
     };
 
     return (
-        <div>
+        <form className="search-bar" onSubmit={handleSubmit}>
             <input
                 type="text"
+                placeholder="Search recipes..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Search recipes..."
             />
-            <button onClick={handleSearch}>Search</button>
-        </div>
+            <button type="submit">Search</button>
+        </form>
     );
 };
 

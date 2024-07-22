@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import RecipeCard from '../components/RecipeCard';  // Assuming you have a RecipeCard component
+import RecipeCard from '../components/RecipeCard';  
 
 const Favorites = () => {
     const [favorites, setFavorites] = useState([]);

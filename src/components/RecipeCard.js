@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFavorites } from '../context/FavoritesContext';
+
 const RecipeCard = ({ recipe, toggleFavorite, isFavorite }) => {
     // const { toggleFavorite } = useFavorites(); // Destructure toggleFavorite correctly
     return (
@@ -7,6 +8,11 @@ const RecipeCard = ({ recipe, toggleFavorite, isFavorite }) => {
             <img src={recipe.image} alt={recipe.title} />
             <h3>{recipe.title}</h3>
             <p>{recipe.description}</p>
+            <ul>
+            {recipe.ingredients.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                ))}
+            </ul>
             <button className="button" onClick={() => toggleFavorite(recipe)}>
                 Toggle Favorite
             </button>

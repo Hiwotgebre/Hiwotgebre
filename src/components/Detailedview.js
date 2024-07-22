@@ -1,4 +1,4 @@
-// src/components/DetailedView.js
+
 
 import React from 'react';
 

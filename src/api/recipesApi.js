@@ -12,6 +12,16 @@ const apiClient = axios.create({
     }
 });
 
+export const searchRecipes = async (query) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/recipes/search?q=${query}`);
+        return response.data.recipes;  // Adjust this based on the actual API response
+    } catch (error) {
+        console.error('Error fetching recipes:', error);
+        throw error;
+    }
+}
+
 // Function to fetch all recipes
 export const fetchAllRecipes = async () => {
     try {

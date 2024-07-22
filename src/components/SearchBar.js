@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBar = ({ onSearch = () => {} }) => {
     const [input, setInput] = useState('');
 
     const handleSubmit = (event) => {

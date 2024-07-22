@@ -6,8 +6,10 @@ import RecipesList from './components/RecipesList';
 import SearchBar from './components/SearchBar';
 import RecipeDetail from './pages/RecipeDetails';
 import Favorites from './pages/Favorites';
-import { FavoritesProvider } from './context/FavoritesContext'
-import './styles.css'
+import { FavoritesProvider } from './context/FavoritesContext';
+import './styles.css';
+
+
 function App() {
     return (
         <>

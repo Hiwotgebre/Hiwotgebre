@@ -1,3 +1,11 @@
+/* Additional styling for layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
 
 .recipe-card {
     background: #fff;
@@ -5,6 +13,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     margin: 20px;
     width: 300px;
@@ -119,4 +129,42 @@
     height: 2px;
     background-color: #fff;
     margin: 3px 0;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 8px;
+    width: 100%;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
 }
